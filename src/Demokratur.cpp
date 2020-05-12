@@ -65,7 +65,7 @@ int get_neighbor(int citizen_choice, int size, string stringSize, bool wrap) {
         break;
         case 3: // E
             neighbor_choice = citizen_choice + 1;
-            if (neighbor_choice % width == 1) {
+            if (neighbor_choice % width == 0) {
             	neighbor_choice = wrap ? (neighbor_choice - (width-1)) : citizen_choice;
             } else if (neighbor_choice == size) {
             	neighbor_choice = wrap ? 0 : citizen_choice;
