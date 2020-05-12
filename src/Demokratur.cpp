@@ -1,9 +1,7 @@
 //============================================================================
 // Name        : Demokratur.cpp
 // Author      : Johannes Uttecht
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
+// Description : Demokratur-Simulation
 //============================================================================
 
 #include <iostream>
@@ -124,7 +122,7 @@ int main() {
 	if (!corona) {
 		int sum = 0;
 		for (int i = 0; i < icolors; i++) {
-			cout << "Welche Überzeugungswahrscheinlichkeit hat Farbe " << i << ": ";
+			cout << "Welche Ãœberzeugungswahrscheinlichkeit hat Farbe " << i << ": ";
 			cin >> persuasions[i];
 			sum += persuasions[i];
 		}
